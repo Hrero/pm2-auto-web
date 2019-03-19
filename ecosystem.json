@@ -11,7 +11,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:Hrero/pm2-auto-web.git",
       "path": "/www/pm2-auto-web",
-      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy": "npm install && npm audit fix && pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }

@@ -5,17 +5,13 @@
     "node_args": "--harmony"
   }],
   "deploy": {
-    "production": {
+    "test": {
       "user": "root",
       "host": ["47.98.176.188"],
       "ref": "origin/master",
-      "repo": "git@xxx.git",
-      "path": "/data/blog/admin",
-      "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production",
-      "ssh_options": "StrictHostKeyChecking=no",
-      "env": {
-        "NODE_ENV": "production"
-      }
+      "repo": "git@github.com:Hrero/pm2-auto-web.git",
+      "path": "/opt/www/pm2-auto-web",
+      "post-deploy": "bash /opt/www/pm2-auto-web/current/deploy.sh"
     }
   }
 }

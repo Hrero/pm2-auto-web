@@ -2,13 +2,7 @@
   "apps": [{
     "name": "pm2-auto-web",
     "script": "app.js",
-    "node_args": "--harmony",
-    "env": {
-      "COMMON_VARIABLE": true
-    },
-    "env_production": {
-      "NODE_ENV": "production"
-    }
+    "node_args": "--harmony"
   }],
   "deploy": {
     "production": {
@@ -17,7 +11,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:Hrero/pm2-auto-web.git",
       "path": "/www/pm2-auto-web",
-      "post-deploy": "bash /www/pm2-auto-web/current/deploy.sh"
+      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }

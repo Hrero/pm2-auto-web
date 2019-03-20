@@ -1,0 +1,148 @@
+@charset "UTF-8";
+//租葛亮UI规范H5
+
+//颜色规范
+//------系统色
+@colorSystemMain: #EFB917;
+@colorSystemF7F: #F7F7F7;
+@colorSystemFFF: #FFFFFF;
+//------文字色
+@colorFont333: #333333;
+@colorFont666: #666666;
+@colorFont999: #999999;
+@colorFontA54: #A54A06;
+@colorFontF60: #F60A0A;
+@colorFont1F8: #1F84FA;
+@colorFontFFF: #FFFFFF;
+//------背景色
+@colorBj333: #333333;
+@colorBjE6E: #E6E6E6;
+@colorBjFFF: #FFFFFF;
+@colorBjEFB: #EFB917;
+@colorBjF7F: #F7F7F7;
+@colorBjFF5: #FF5C5C;
+@colorBjFFE: #FFE6E5;
+@colorBjEFA: #EFAC17;
+@colorBjEFC: #EFCF17;
+@colorBjFF7: #FF7171;
+@colorBjEE3: #EE3F3F;
+//------芝麻色系
+@colorZmCompany: #0083F0;
+@colorZmPersonal: #1CCFC9;
+//------京东色系
+@colorJdPersonal: #DE4037;
+//-----字体（中文）
+@fontFamilyCommon: PingFangSC-Regular, Helvetica;
+@fontFamilyBold: PingFangSC-SemiBold, Helvetica-SemiBold;
+@fontFamilyLight: PingFangSC-Light, Helvetica--Light;
+@fontFamilySpec: Akrobat;
+
+//字体大小
+@fontSize18: 18px;
+@fontSize16: 16px;
+@fontSize14: 14px;
+@fontSize12: 12px;
+
+@home_icon: url(../images/home_icon.png);
+@bg_image_loading: url(../images/loading.jpg);
+@bg_home_logo: url(../images/logo.png);
+@bg_home_kinds: url(../images/icon_home_kind.png);
+@bg_home_footlogo: url(../images/footlogo.png);
+@bg_detail_tips_tt: url(../images/order-tips.jpg);
+@bg_list_empty: url(../images/empty.png);
+@bg_personal: url(../images/bg_personal.jpg);
+@bg_good: url(../images/bg_good.png);
+@cart_list_no: url(../images/cart_list_no.png);
+@bg_partner: url(https://static1.zugeliang01.com/lease/img/cae70b10-e968-11e8-ba97-e1e392429f95.jpg);
+//认证背景
+@zm_company: url(../images/zmApply_company.jpg);
+@zm_personal: url(../images/zmApply_personal.jpg);
+@jd_personal: url(../images/jdApply_personal.jpg);
+@bg_rz: url(../images/rz_bg.jpg);
+@zm_zgl_logo: url(../images/zm_zgl_logo.png);
+@zm_lihai: url(../images/zgl_lihai.png);
+@zm_cor_top: url(../images/zmApply_company_title.jpg);
+@zm_personal_top: url(../images/zmApply_personal-title.jpg);
+@ali_result_personal: url(../images/ali_result_personal.jpg);
+@ali_result_company: url(../images/ali_result_company.jpg);
+@ali_result_fail: url(../images/ali_result_fail.png);
+@jd_result_personal: url(../images/jd_result_personal.jpg);
+//归还设备
+@bg_back: url(../images/back_bg.jpg);
+//补充资料
+@bg_zmchange: url(../images/bg_zmchange.jpg);
+@zmchange_front: url(../images/zmchange_back.png);
+@zmchange_back:  url(../images/zmchange_front.png);
+@zmchange_add: url(../images/zmchange_add.png);
+//cps绑定
+@bind_code_bg: url(../images/bind_code_bg.jpg);
+@bind_code: url(../images/bind_code.png);
+@bind_code_info: url(../images/bind_code_info.png);
+@logo_w: url(../images/logo-w.png);
+@icon_wuyou: url(../images/wuyougou_icon.png);
+@open_logo: url(../images/open_logo.png);
+// 新人礼
+@bg_gift: url(../images/bg_gift.jpg);
+@icon_zgl_info: url(../images/zgl_info.png);
+@bounty_bg: url(../images/bg_bounty.jpg);
+@share_bg: url(../images/bg_share.jpg);
+@share_img: url(../images/bg_share_img.jpg);
+
+// 粉象
+@bg_pink: url(../images/pink_back.jpg);
+
+// 花呗
+@icon_huabei: url(../images/icon_huabei.png);
+@icon_huabeixx: url(https://static1.zugeliang01.com/lease/img/c5f500b0-b19d-11e8-8db4-710cb7559b1a.png);
+@bg_zhekou: url(../images/bg_zhekou.jpg);
+// 泊寓
+@bg_boyu: url(https://static1.zugeliang01.com/lease/img/8c270b10-a763-11e8-8beb-6ff01f9783be.jpg);
+// 云块认证
+@icon_suc: url(../images/zgl_apply_suc.png);
+@icon_fail: url(../images/zgl_apply_fail.png);
+@fd_apply: url(../images/fd_apply.png);
+
+@round_1: url(../images/round_check_1.png);
+@round_2: url(../images/round_check_2.png);
+
+// 盒子宽高
+.size(@w, @h) {  width: @w;  height: @h;}
+// 居中, CSS3 平移方式, 兼容性不行
+.center(translate) {  position: absolute;  top: 50%; left: 50%;  transform: translate(-50%, -50%);}
+// 居中, Flex 方式, 兼容性不行
+.center(flex) {  display: flex;  align-items: center;  justify-content: center;}
+// 固定定位
+.fixed() { position: fixed; _position: absolute; *zoom: 1; }
+// 遮罩层, 全屏遮罩、区域遮罩
+.over-screen(fixed) {  .fixed();  top: 0;  left: 0;  right: 0;  bottom: 0;}
+// 扩展点击区域
+.extend-click() {position: relative;&:before { content: ''; position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px;}}
+// 字体大小
+.fz(@fz) {  font-size: @fz;}
+// 字体颜色, 包括链接与非链接
+.color(@color) { color: @color;}
+// 字体颜色 + 自身 Hover
+.color(@color, @hovercolor) { color: @color; &:hover { color: @hovercolor; }}
+// 字体颜色 + 链接 Hover
+.color(@color, @acolor, @hovercolor) {color: @color;a {color: @acolor;&:hover { color: @hovercolor; }}}
+// 正常字体样式
+.normal-font() {font-weight: normal;font-style: normal;}
+// 禁止换行, 文本溢出省略号显示 (一行)
+.ellipsis() {white-space: normal;word-wrap: break-word;word-break: break-all;-o-text-overflow: ellipsis;-ms-text-overflow: ellipsis;text-overflow: ellipsis;overflow: hidden;}
+// 链接默认无下划线，hover后有下划线的样式
+.hover-link() { text-decoration: none; &:hover { text-decoration: underline;}}
+// 盒子阴影 box-shadow: 水平阴影的位置, 垂直阴影的位置, 模糊距离, 阴影的大小, 阴影的颜色, 阴影开始方向（默认是从里往外，设置inset就是从外往里）;
+.box-shadow() { box-shadow: 0px 14px 26px 0px rgba(0, 0, 0, 0.1);}
+// 盒子 Hover
+.box-hover() {transition: all .2s linear;&:hover {box-shadow: 0 15px 30px rgba(0, 0, 0, .1);transform: translate3d(0, -2px, 0);}}
+// 浮动
+.fl() {float: left;}.fr() {float: right;}
+// 清除浮动
+.clearfix() {*zoom: 1;&:after {display: block;clear: both;content: '';visibility: hidden;height: 0;}}
+// 禁止文本被选择
+.user-select() {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+// 吸顶导航
+.fix-header(@h: 70px) {.fixed();top: 0;left: 0;width: 100%;height: @h;z-index: 1000;}
+// 输入框
+.input-text() {display: block;width: 100%;padding: 4px 8px;font-size: 14px;line-height: 1.42858;color: #333;border: 1px solid #ddd;background-color: #fff;border-radius: 3px;}
+

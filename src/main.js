@@ -5,11 +5,11 @@ import App from './App'
 // import router from './router'
 import VueI18n from 'vue-i18n'
 import zhCN from './assets/lang/zh-CN'
-// import Antd from 'ant-design-vue'
+import Antd from 'ant-design-vue'
 // import 'ant-design-vue/dist/antd.css'
 
 Vue.use(VueI18n)
-// Vue.use(Antd)
+Vue.use(Antd)
 Vue.config.productionTip = false
 const i18n = new VueI18n({locale: 'zhCN', messages: { zhCN }})
 

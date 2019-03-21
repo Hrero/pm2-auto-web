@@ -1,7 +1,11 @@
 export default {
   'component_globalHeader_search': '搜索你想找的商品',
   'component_globalHeader_search_example': '搜索提示',
-  'component_globalHeader_help': '使用文档',
+  'component_globalHeader_my_order': '我的订单',
+  'component_globalHeader_account_recharge': '账户充值',
+  'component_globalHeader_deposit_free': '免押金额度',
+  'component_globalHeader_shipping_address': '收货地址',
+  'component_globalHeader_quit': '退出',
   'component_globalHeader_notification': '通知',
   'component_globalHeader_notification_empty': '你已查看所有通知',
   'component_globalHeader_message': '消息',

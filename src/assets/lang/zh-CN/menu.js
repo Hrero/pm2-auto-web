@@ -6,6 +6,7 @@ export default {
   'menu_goods': '全部商品',
   'menu_goods_searchtable': '查询列表',
   'menu_goods_basiclist': '商品列表',
+  'menu_goods_partner': '合伙人',
   'menu_rules': '租赁规则',
   'menu_rules_basic': '租赁详情页',
   'menu_recycle': '二手回收',

@@ -6,7 +6,7 @@ import router from './router'
 import VueI18n from 'vue-i18n'
 import zhCN from './assets/lang/zh-CN'
 import Antd from 'ant-design-vue'
-import 'ant-design-vue/dist/antd.css'
+// import 'ant-design-vue/dist/antd.css'
 
 Vue.use(VueI18n)
 Vue.use(Antd)

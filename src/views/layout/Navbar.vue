@@ -71,7 +71,8 @@ header{
             li{
                 .size(25%, 100%);
                 .color(@colorFont666, @colorFontFFF);
-                .center(flex)
+                .center(flex);
+                .pointer();
             }
         }
         .head-user{
@@ -81,6 +82,7 @@ header{
             .head-login{
                 span{
                     .color(@colorFont666, @colorFontFFF);
+                    .pointer();
                 }       
             }
         }

@@ -1,5 +1,7 @@
 <template>
-  <div>1</div>
+  <div>
+    <Button>Default</Button>
+  </div>
 </template>
 
 <script>

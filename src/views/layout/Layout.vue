@@ -1,7 +1,6 @@
 <template>
   <a-layout id="components-layout-demo-top" class="layout">
     <a-layout-header>
-      <a-button type="primary">Primary</a-button>
       <Navbar/>
     </a-layout-header>
     <a-layout-content>
